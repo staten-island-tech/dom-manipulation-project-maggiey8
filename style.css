@@ -1,0 +1,19 @@
+.gallery {
+    font-size: 25px;
+    padding: 5%;
+    background-color: rgb(82, 147, 163);
+    margin: 1.1rem;
+    color: rgb(255, 255, 255);
+    max-width: 80%;
+}
+
+#box {
+    color: rgb(rgb(0, 0, 255))
+}
+
+.image {
+    max-width: 50%;
+}
+.button {
+    translate: (10, 10, 10);
+}

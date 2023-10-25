@@ -4,12 +4,22 @@ const DOMSelectors = {
     h2s: document.querySelectorAll("h2"),
 };
 
+function makeAlbum() {
+    
+}
+
 console.log(DOMSelectors.h2s);
 
 DOMSelectors.form.addEventListener("submit", function(event){
 event.preventDefault();
 
-document
+/* const Album = makeAlbum()
+
+addCard(Album)
+clearFields()
+addRemoveButtons() */
+
+/* document
     .querySelector(".gallery")
     .insertAdjacentHTML(
         "afterbegin",
@@ -17,7 +27,5 @@ document
     )
 
 console.log(DOMSelectors.firstName.value);
-DOMSelectors.h2s.forEach(
-    (el) => (el.textContent = DOMSelectors.firstName.value));
+DOMSelectors.h2s.forEach((el) => (el.textContent = DOMSelectors.firstName.value)); */
 });
-
