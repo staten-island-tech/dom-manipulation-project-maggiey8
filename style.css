@@ -1,3 +1,4 @@
+
 .container {
     flex-wrap: wrap;
 }
@@ -30,10 +31,6 @@
     }
 }
 
-#box {
-    color: rgb(rgb(0, 0, 255))
-}
-
 .image {
     max-width: 50%;
     margin: auto;
@@ -47,4 +44,18 @@
 
 .card-title {
     text-align: center;
+}
+
+.info {
+    background-color: rgb(47, 99, 194);
+    padding: 5%;
+    text-align: left;
+    max-width: 200px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: auto;
+}
+
+input {
+    margin: auto;
 }
