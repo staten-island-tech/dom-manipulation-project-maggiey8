@@ -3,29 +3,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
+    <title>Books</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="info">
-    <form action="" class="form">
-        <label for="firstName">Title</label>
-        <input type="text" name="firstName" class="first-name">
-        <input type="submit" value="Click Here">
-    </form>
-    <form action="" class="form">
+    <form action="" id="form">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="title">
+
+        <label for="author">Author</label>
+        <input type="text" name="author" class="author">
+
         <label for="imgLink" class="link">Image link</label>
-        <input type="text" name="imgLink" class="img-link">
-        <input type="submit" value="Submit link">
+        <input type="text" name="imgLink" class="imgLink">
+
+        <input type="submit" value="Submit" id="submit">
     </form>
-</div>
-    
-    <div class="container">    
-        <div class="gallery">
+    </div>
+
+    <div class="container">
+            <div class="gallery">
             <h2 class="card-title">Example</h2>
-            <img class="image" src="https://th.bing.com/th/id/R.f767dd197e0229c167cb5cb84068f73d?rik=Mkyk1KP2dqdwSA&pid=ImgRaw&r=0" alt="">
-            <button class="button">Remove</button>
-        </div>
+            <h3 class="card-author">Example</h3>
+            <img class="image" src="https://th.bing.com/th/id/R.f767dd197e0229c167cb5cb84068f73d?rik=Mkyk1KP2dqdwSA&pid=ImgRaw&r=0" alt=""></img>
+            <button class="button">Example</button>
+            </div>
     </div>
     <script src="dom.js" ></script>
 </body>

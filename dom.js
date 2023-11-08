@@ -1,9 +1,9 @@
 const DOMSelectors = {
-    form: document.querySelector(".form"),
-    firstName: document.querySelector(".first-name"),
-    h2s: document.querySelectorAll("h2"),
-    link: document.querySelector(".link"),
-    imgs: document.querySelectorAll("img")
+    form: document.querySelector("#form"),
+    title: document.querySelector(".title"),
+    author: document.querySelector(".author"),
+    link: document.querySelector(".imgLink"),
+    button: document.querySelectorAll("#submit")
 };
 
 /* function makeAlbum() {
@@ -15,24 +15,24 @@ function addCard() {
     document.querySelector(".gallery").insertAdjacentHTML(
         "afterend",
     /*     `<div class="card"><h2 class="card-title">${DOMSelectors.firstName.value}</h2></div>` */
-            `<div class="gallery" id="box">
-            <h2 class="card-title">${DOMSelectors.firstName.value}</h2>
+            `<div class="gallery">
+            <h2 class="card-title">${DOMSelectors.title.value}</h2>
+            <h3 class="card-author">${DOMSelectors.author.value}</h3>
             <img class="image" src="${DOMSelectors.link.value}" alt=""></img>
-            <button class="button">Remove</button>
+            <button class="button" id="remove">Remove</button>
             </div>`
     )
 }
 
-console.log(DOMSelectors.h2s);
-
 function clearFields() {
-    let inputs = document.querySelectorAll(".form")
-    inputs.clear()
+    DOMSelectors.title.value = "";
+    DOMSelectors.author.value = "";
+    DOMSelectors.link.value = "";
 }
 
 function remove() {
-    let btn = document.querySelectorAll(".button")
-    console.log(btn)
+    let btn = document.querySelectorAll("#remove")
+    //console.log(btn)
     btn.forEach(button => button.addEventListener("click", function(event) {
     let cardOld = (event.target.parentElement);
     cardOld.remove();
@@ -41,18 +41,9 @@ function remove() {
 }
 
 DOMSelectors.form.addEventListener("submit", function(event){
-event.preventDefault();
-    //const Album = makeAlbum()
-    //addCard(Album)
+    event.preventDefault();
     addCard()
     clearFields()
-    
-console.log(DOMSelectors.firstName.value);
-DOMSelectors.h2s.forEach((el) => (el.textContent = DOMSelectors.firstName.value));
-
-DOMSelectors.img.forEach((el) => (el.textContent) = DOMSelectors.link.value);
-});
-
-DOMSelectors.button.addEventListener("submit", function(event) {
     remove()
-}) 
+});
+ 
